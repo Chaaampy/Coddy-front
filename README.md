@@ -1,15 +1,20 @@
 # PHP-Project-Security-Scanner
 
-## Doc
+### Build
 
-### RabbitMQ
+Installer les dépendances après avoir installer Meteor, une fois dans le dossier de l'app
 
-https://www.rabbitmq.com/
+```
+meteor npm install
+```
 
-### PHP Resque
+### Run
 
-https://github.com/chrisboulton/php-resque
+```
+meteor
+```
+ou pour spécifier un port
 
-### Tuto Meteor
-
-https://openclassrooms.com/courses/creez-une-single-page-app-avec-node-js-et-meteor
+```
+meteor --port <port>
+```
