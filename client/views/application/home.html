@@ -1,0 +1,72 @@
+<template name="home">
+    <section class="home-intro toad-full">
+        <div class="coddy-wrapper">
+            <div class="coddy">
+                <div class="cogweb"></div>
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+                <div class="paw paw-one"></div>
+                <div class="paw paw-two"></div>
+                <div class="paw paw-three"></div>
+                <div class="paw paw-four"></div>
+                <div class="paw paw-five"></div>
+                <div class="paw paw-six"></div>
+            </div>
+        </div>
+        <article class="intro-wrapper toad-container">
+            <div class="intro-wrapper-text animated fadeIn">
+                <p>Hi, my name is <strong>Coddy</strong><br>
+                    Im a <strong>bug-eater</strong> and Im <strong>very hungry</strong><br>
+                    and I'll help you to <strong>clean</strong> your <strong>PHP project</strong>
+                </p>
+            </div>
+            <div class="intro-wrapper-btn">
+                <a href="#demo" class="animated fadeIn link-to-demo btn-primary" data-text="Demo">Demo</a>
+                <a href="{{pathFor route='start'}}" class="animated fadeIn btn-primary" data-text="Start">Start</a>
+            </div>
+        </article>
+    </section>
+    
+    <section class="demo toad-full" id="demo">
+        <div class="video-wrapper toad-container">
+            <div class="t-9">
+                <img src="/img/mockup.png">
+                <video class="video-one" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+                    <source src="/vid/sans-titre-3.mp4" type="video/mp4">
+                </video>
+                <video class="video-two" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop style="display:none;">
+                    <source src="/vid/sans-titre-3.mp4" type="video/mp4">
+                </video>
+                <video class="video-three" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop style="display:none;">
+                    <source src="/vid/sans-titre-3.mp4" type="video/mp4">
+                </video>
+                <video class="video-four" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop style="display:none;">
+                    <source src="/vid/sans-titre-3.mp4" type="video/mp4">
+                </video>
+                <video class="video-five" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop style="display:none;">
+                    <source src="/vid/sans-titre-3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <article class="demo-one">
+            <h2>Connect with github</h2>
+            <a href="javascript:void(0)" data-text="Continue" class="demo-one-btn btn-primary">Continue</a>
+        </article>
+        <article class="demo-two" style="display:none;">
+            <h2>Select one of your project</h2>
+            <a href="javascript:void(0)" data-text="Continue" class="demo-two-btn btn-primary">Continue</a>
+        </article>
+        <article class="demo-three" style="display:none;">
+            <h2>Enter your mail</h2>
+            <a href="javascript:void(0)" data-text="Continue" class="demo-three-btn btn-primary">Continue</a>
+        </article>
+        <article class="demo-four" style="display:none;">
+            <h2>Get your report</h2>
+            <a href="javascript:void(0)" data-text="Continue" class="demo-four-btn btn-primary">Continue</a>
+        </article>
+        <article class="demo-five" style="display:none;">
+            <h2>Got it ?</h2>
+            <a href="{{pathFor route='start'}}" data-text="Let's go !" class="demo-five-btn btn-primary">Let's go !</a>
+        </article>
+    </section>
+</template>

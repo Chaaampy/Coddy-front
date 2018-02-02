@@ -1,0 +1,348 @@
+@import '/typo.less';
+@import '/variables.less';
+@import '/classes.less';
+@import '/colors.less';
+@import '/components.less';
+
+// 1 - INTRO
+// 2 - START & PROJECT
+// 3 - ABOUT & LEGAL
+// 4 - CONTACT
+// 5 - ANIMATIONS
+
+// 1 - INTRO
+
+section.home-intro {
+    //
+    
+    article.intro-wrapper {
+        .absolute;
+        .flex-center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        height: 50vh;
+        top: auto;
+        
+        .intro-wrapper-text {
+            line-height: 1.25;
+            animation-delay: 4s;
+            
+            p {
+                font-size: 1.25rem;
+            }
+        }
+        
+        .intro-wrapper-btn {
+            .flex-center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+            a:first-child {
+                animation-delay: 4.25s;
+            }
+            
+            a:last-child {
+                animation-delay: 4.5s;
+            }
+        }
+    }
+}
+
+section.demo {
+    //
+    
+    .video-wrapper {
+        .absolute;
+        .flex-center;
+        height: 65vh;
+        
+        div {
+            position: relative;
+            
+            video,
+            img {
+                .absolute;
+                width: 100%;
+            }
+            
+            video {
+                width: 101%;
+            }
+
+            video {
+                z-index: 9;
+            }
+
+            img {
+                z-index: 99;
+            }
+        }
+    }
+    
+    article {
+        .absolute;
+        .flex-center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        height: 35vh;
+        top: auto;
+        
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+// 2 - START & PROJECT
+
+section.start {
+    //
+    
+    article.start-wrapper {
+        .absolute;
+        .flex-center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        height: 50vh;
+        top: auto;
+        
+        .start-wrapper-text {
+            line-height: 1.25;
+            
+            p {
+                font-size: 1.25rem;
+            }
+        }
+        
+        .start-wrapper-btn {
+            .flex-center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+}
+
+section.project {
+    .flex-center;
+    
+    .toad-container {
+        .flex-center;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+        .step-progress {
+            .flex-center;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            position: relative;
+            margin: 50px 0;
+            padding: 0 100px;
+            
+            span {
+                .flex-center;
+                height: 40px;
+                width: 40px;
+                margin: 0 25px;
+                font-size: 1.5rem;
+                font-weight: @bold;
+                border-radius: 50%;
+                border: solid 5px @medium-blue;
+                transition: @tr-fast;
+            }
+            
+            span.step-active {
+                background: @medium-blue;
+                color: @white;
+            }
+            
+            span.step-inactive {
+                background: @white;
+                color: @medium-blue;
+            }
+        }
+        
+        .step-instruction {
+            .flex-center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            
+            div {
+                float: none;
+                
+                img {
+                    height: 75%;
+                    width: 75%;
+                }
+                
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+// 3 - ABOUT & LEGAL
+
+section.about,
+section.legal {
+    //
+    
+    .toad-container {
+        padding: 25px;
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            //
+        }
+    }
+}
+
+// 4 - CONTACT
+
+section.contact {
+    //
+    
+    .toad-container {
+        padding: 25px;
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        div.contact-form-wrapper {
+            width: 100%;
+            float: none;
+            margin: 0 auto;
+            
+            form {
+                margin: 35px auto;
+                
+                .form-group:nth-child(1),
+                .form-group:nth-child(2) {
+                    width: 48%;
+                }      
+
+                .form-group:nth-child(1) {
+                    margin-right: 3%;
+                }
+
+                .form-group:last-child {
+                    margin: 0 auto;
+                }
+            }
+        }        
+    }
+}
+
+// 5 - ANIMATIONS
+
+        
+@keyframes coddyIntro {
+    0% {
+        bottom: 500vh;
+        top: -500vh;
+    }
+    70% {
+        bottom: 50vh;
+        top: -50vh;
+    }
+    85% {
+        bottom: -150px;
+    }
+    100% {
+        bottom: -75px;
+    }
+}
+
+@keyframes coddyBlink {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@keyframes pawOne {
+    0% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes pawTwo {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes pawThree {
+    0% {
+        transform: rotate(120deg);
+    }
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes pawFour {
+    0% {
+        transform: rotate(330deg) scaleX(-1);
+    }
+    100% {
+        transform: rotate(345deg) scaleX(-1);
+    }
+}
+
+@keyframes pawFive {
+    0% {
+        transform: rotate(315deg) scaleX(-1);
+    }
+    100% {
+        transform: rotate(330deg) scaleX(-1);
+    }
+}
+
+@keyframes pawSix {
+    0% {
+        transform: rotate(240deg) scaleX(-1);
+    }
+    100% {
+        transform: rotate(255deg) scaleX(-1);
+    }
+}
+
+@keyframes inputOutline {
+    0% {
+        width:0;
+        right:-30%;
+    }
+    25%,75% {
+        width:100%;
+    }
+    100% {
+        width:0;
+        right:130%;
+    }
+}

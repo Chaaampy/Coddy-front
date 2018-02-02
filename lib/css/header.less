@@ -1,0 +1,56 @@
+@import '/typo.less';
+@import '/variables.less';
+@import '/classes.less';
+@import '/colors.less';
+@import '/components.less';
+
+header.header {
+    z-index: 9999;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 50px;
+    background: rgba(255,255,255,0.25);
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+    background: @white;
+    
+    .header-wrapper {
+        .flex-around;
+        height: 50px;
+        
+        .logo-wrapper {
+            .flex-center;
+            margin: 0;
+
+            a {
+                //
+
+                img.logo {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+        }
+
+        .nav {
+            .flex-center;
+            height: 50px;
+
+            a {
+                .flex-center;
+                height: 50px;
+                text-transform: uppercase;
+                font-weight: @light;
+                color: @medium-grey;
+                padding: 0 15px;
+                transition: @tr-fast;
+                
+                &:hover {
+                    background: @medium-blue;
+                    color: @white;
+                }
+            }
+        }
+    }
+}

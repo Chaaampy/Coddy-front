@@ -1,0 +1,70 @@
+<template name="project">
+    <section class="project toad-full">
+        <div class="toad-container">
+            <div class="t-10 step-progress">
+                <span class="step-active">1</span>
+                <span class="step-inactive">2</span>
+                <span class="step-inactive">3</span>
+            </div>
+            <div class="step-instruction t-10">
+                <div class="step-logo">
+                    <img src="/img/logo-svg.svg">
+                </div>
+                <div>
+                    <p class="step-one-text">Here we are !<br>
+                        First, please choose the <strong>Github</strong> repo<br>
+                        you want to scan below
+                    </p>
+                    <p class="step-two-text" style="display: none">Nice !<br>
+                        Now please give us your <strong>email address</strong>, <br>
+                        then we could send you your report
+                    </p>
+                    <p class="step-three-text" style="display: none">Awesome !<br>
+                        Finally, please check if all the<br>
+                        informations below are correct
+                    </p>
+                </div>
+            </div>
+            <form class="project-form t-10">
+                <div class="steps step-one-form">
+                    <div class="form-group">
+                        <select id="project-select">
+                            <option value="value1">Value 1</option>
+                            <option value="value2">Value 2</option>
+                            <option value="value3">Value 3</option>
+                        </select>
+                        <span></span>
+                    </div>
+                    <div class="form-group">
+                        <a href="javascript:void(0)" class="btn-primary" data-text="Continue">Continue</a>
+                    </div>
+                </div>
+                <div class="steps step-two-form" style="display: none;">
+                    <div class="form-group">
+                        <input type="mail" id="project-mail" name="project-mail" placeholder="Mail">
+                    </div>
+                    <div class="form-group">
+                        <a href="javascript:void(0)" class="btn-primary" data-text="Continue">Continue</a>
+                    </div>
+                    <div>
+                        <p>or <a href="javascript:void(0)" class="link">get back</a></p>
+                    </div>
+                </div>
+                <div class="steps step-three-form" style="display: none;">
+                    <div class="form-group">
+                        <input type="text" id="project-repo-final" name="project-mail-final" value="" readonly>
+                    </div>
+                    <div class="form-group">
+                        <input type="mail" id="project-mail-final" name="project-mail-final" value="" readonly>
+                    </div>
+                    <div class="form-group">
+                        <a href="javascript:void(0)" class="btn-primary" data-text="Submit">Submit</a>
+                    </div>
+                    <div>
+                        <p>or <a href="javascript:void(0)" class="link">get back</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</template>
