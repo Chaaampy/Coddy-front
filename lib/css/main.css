@@ -88,7 +88,6 @@ body.body form .form-group input:focus {
 }
 body.body form .form-group textarea {
   resize: none;
-  height: 250px;
   border: solid 1px #a6a6a6;
   padding-left: 10px;
   padding-top: 10px;
@@ -524,12 +523,41 @@ section.project .toad-container .step-instruction div img {
 section.project .toad-container .step-instruction div p {
   font-size: 1.25rem;
 }
+section.about,
+section.legal,
+section.donate {
+  min-height: 100vh;
+  height: auto;
+}
 section.about .toad-container,
-section.legal .toad-container {
+section.legal .toad-container,
+section.donate .toad-container {
   padding: 25px;
 }
 section.about .toad-container h1,
-section.legal .toad-container h1 {
+section.legal .toad-container h1,
+section.donate .toad-container h1 {
+  text-align: center;
+}
+section.about .toad-container p,
+section.legal .toad-container p,
+section.donate .toad-container p {
+  line-height: 1.35;
+}
+section.about .toad-container .donate-wrapper,
+section.legal .toad-container .donate-wrapper,
+section.donate .toad-container .donate-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+section.about .toad-container .donate-wrapper h2,
+section.legal .toad-container .donate-wrapper h2,
+section.donate .toad-container .donate-wrapper h2 {
   text-align: center;
 }
 section.contact .toad-container {
@@ -558,6 +586,9 @@ section.contact .toad-container div.contact-form-wrapper form .form-group:nth-ch
 }
 section.contact .toad-container div.contact-form-wrapper form .form-group:last-child {
   margin: 0 auto;
+}
+section.contact .toad-container div.contact-form-wrapper form textarea {
+  height: 250px;
 }
 @keyframes coddyIntro {
   0% {

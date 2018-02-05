@@ -188,11 +188,13 @@ section.project {
     }
 }
 
-// 3 - ABOUT & LEGAL
+// 3 - ABOUT & LEGAL & DONATE
 
 section.about,
-section.legal {
-    //
+section.legal,
+section.donate {
+    min-height: 100vh;
+    height: auto;
     
     .toad-container {
         padding: 25px;
@@ -202,7 +204,19 @@ section.legal {
         }
         
         p {
-            //
+            line-height: 1.35;
+        }
+        
+        .donate-wrapper {
+            .flex-center;
+            height: 50vh;
+            width: 100%;
+            box-sizing: border-box;
+            flex-direction: column;
+            
+            h2 {
+                text-align: center;
+            }
         }
     }
 }
@@ -242,6 +256,10 @@ section.contact {
 
                 .form-group:last-child {
                     margin: 0 auto;
+                }
+                
+                textarea {
+                    height: 250px;
                 }
             }
         }        

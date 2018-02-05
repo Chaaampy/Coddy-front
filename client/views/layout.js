@@ -8,6 +8,6 @@ Template.mainLayout.events({
           $(".logo").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
               $(this).removeClass("animated tada");
           });
-      });
+        });
 	}
 });

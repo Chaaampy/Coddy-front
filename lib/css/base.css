@@ -30,26 +30,26 @@
   position: absolute;
   content: '';
 }
-a {
+body.body a {
   text-decoration: none;
 }
-.link {
+body.body .link {
   color: #1da1f2;
   transition: all 0.25s ease-in-out;
 }
-.link:hover {
+body.body .link:hover {
   color: #1678b5;
 }
-strong {
+body.body strong {
   font-weight: 700;
 }
-p {
+body.body p {
   font-weight: 300;
 }
-input {
+body.body input {
   position: relative;
 }
-form {
+body.body form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,38 +57,126 @@ form {
   width: 100%;
   box-sizing: border-box;
 }
-form .form-group {
+body.body form .form-group {
   position: relative;
   overflow: hidden;
   float: none;
   margin: 10px 0;
 }
-form .form-group input,
-form .form-group textarea {
+body.body form .form-group input,
+body.body form .form-group textarea,
+body.body form .form-group select {
   width: 100%;
+  position: relative;
   box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
 }
-form .form-group input:focus,
-form .form-group textarea:focus {
+body.body form .form-group input:focus,
+body.body form .form-group textarea:focus,
+body.body form .form-group select:focus {
   outline: none;
 }
-form .form-group input {
+body.body form .form-group input {
   height: 30px;
   border: none;
-  border-bottom: solid 1px #1da1f2;
+  border-bottom: solid 1px #a6a6a6;
   padding-left: 10px;
 }
-form .form-group textarea {
+body.body form .form-group input:focus {
+  outline: none;
+  border-bottom: solid 1px #1da1f2;
+}
+body.body form .form-group textarea {
   resize: none;
   height: 250px;
-  border: solid 1px #1da1f2;
+  border: solid 1px #a6a6a6;
   padding-left: 10px;
   padding-top: 10px;
 }
-form .form-group button.btn-primary {
+body.body form .form-group textarea:focus {
+  outline: none;
+  border: solid 1px #1da1f2;
+}
+body.body form .form-group select {
+  height: 30px;
+  background: transparent;
+  border: solid 1px #a6a6a6;
+  padding-left: 5px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+body.body form .form-group select:focus {
+  outline: none;
+  border: solid 1px #1da1f2;
+}
+body.body form .form-group button.btn-primary {
   width: 100%;
 }
-.btn-primary {
+body.body form.project-form .steps {
+  width: 100%;
+}
+body.body form.project-form .steps div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+}
+body.body form.project-form .steps div:last-child p {
+  margin: 0;
+}
+body.body form.project-form .steps .form-group select,
+body.body form.project-form .steps .form-group input {
+  height: 50px;
+  border: solid 1px #a6a6a6;
+}
+body.body form.project-form .steps .form-group select:focus,
+body.body form.project-form .steps .form-group input:focus {
+  outline: none;
+  border: solid 1px #1da1f2;
+}
+body.body form.project-form .steps .form-group a {
+  width: 100%;
+}
+body.body form.project-form .step-one-form .form-group:nth-child(1) span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+  left: auto;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #1da1f2;
+}
+body.body form.project-form .step-one-form .form-group:nth-child(1) span:before {
+  position: absolute;
+  content: '';
+  left: 18px;
+  height: 20px;
+  width: 5px;
+  background: #ffffff;
+  transform: rotate(-35deg);
+  transition: all 0.25s ease-in-out;
+}
+body.body form.project-form .step-one-form .form-group:nth-child(1) span:after {
+  position: absolute;
+  content: '';
+  right: 18px;
+  height: 20px;
+  width: 5px;
+  background: #ffffff;
+  transform: rotate(35deg);
+  transition: all 0.25s ease-in-out;
+}
+body.body .btn-primary {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +193,7 @@ form .form-group button.btn-primary {
   font-weight: 700;
   box-sizing: border-box;
 }
-.btn-primary:before {
+body.body .btn-primary:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -123,12 +211,12 @@ form .form-group button.btn-primary {
   opacity: 0;
   transition: all 0.25s ease-in-out;
 }
-.btn-primary:hover:before {
+body.body .btn-primary:hover:before {
   left: 0;
   right: 0;
   opacity: 1;
 }
-.coddy-wrapper {
+body.body .coddy-wrapper {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -145,18 +233,18 @@ form .form-group button.btn-primary {
   animation: coddyIntro 3s ease-in-out forwards;
   margin: 0;
 }
-.coddy-wrapper .coddy {
+body.body .coddy-wrapper .coddy {
   position: relative;
   height: 75px;
   width: 75px;
   background: #000000;
   border-radius: 50%;
 }
-.coddy-wrapper .coddy .cogweb,
-.coddy-wrapper .coddy .paw {
+body.body .coddy-wrapper .coddy .cogweb,
+body.body .coddy-wrapper .coddy .paw {
   background: #000000;
 }
-.coddy-wrapper .coddy .cogweb {
+body.body .coddy-wrapper .coddy .cogweb {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -168,7 +256,7 @@ form .form-group button.btn-primary {
   top: auto;
   bottom: 5px;
 }
-.coddy-wrapper .coddy .eye {
+body.body .coddy-wrapper .coddy .eye {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -182,15 +270,15 @@ form .form-group button.btn-primary {
   width: 0;
   top: 25px;
 }
-.coddy-wrapper .coddy .eye-left {
+body.body .coddy-wrapper .coddy .eye-left {
   animation-delay: 3.5s;
   right: 20px;
 }
-.coddy-wrapper .coddy .eye-right {
+body.body .coddy-wrapper .coddy .eye-right {
   animation-delay: 3.75s;
   left: 20px;
 }
-.coddy-wrapper .coddy .paw {
+body.body .coddy-wrapper .coddy .paw {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -204,55 +292,55 @@ form .form-group button.btn-primary {
   border-left: solid 10px #000000;
   border-top-right-radius: 20px;
 }
-.coddy-wrapper .coddy .paw-one {
+body.body .coddy-wrapper .coddy .paw-one {
   top: -60px;
   left: 50px;
   transform: rotate(30deg);
   animation: pawOne 1s ease-in-out infinite alternate;
   animation-delay: .25s;
 }
-.coddy-wrapper .coddy .paw-two {
+body.body .coddy-wrapper .coddy .paw-two {
   top: 10px;
   left: 70px;
   transform: rotate(45deg);
   animation: pawTwo 1s ease-in-out infinite alternate;
   animation-delay: .75s;
 }
-.coddy-wrapper .coddy .paw-three {
+body.body .coddy-wrapper .coddy .paw-three {
   top: 75px;
   left: 50px;
   transform: rotate(120deg);
   animation: pawThree 1s ease-in-out infinite alternate;
   animation-delay: 0;
 }
-.coddy-wrapper .coddy .paw-four {
+body.body .coddy-wrapper .coddy .paw-four {
   top: -60px;
   left: -60px;
   transform: rotate(330deg) scaleX(-1);
   animation: pawFour 1s ease-in-out infinite alternate;
   animation-delay: .15s;
 }
-.coddy-wrapper .coddy .paw-five {
+body.body .coddy-wrapper .coddy .paw-five {
   top: 10px;
   left: -100px;
   transform: rotate(315deg) scaleX(-1);
   animation: pawFive 1s ease-in-out infinite alternate;
   animation-delay: .4s;
 }
-.coddy-wrapper .coddy .paw-six {
+body.body .coddy-wrapper .coddy .paw-six {
   top: 75px;
   left: -60px;
   transform: rotate(240deg) scaleX(-1);
   animation: pawSix 1s ease-in-out infinite alternate;
   animation-delay: .9s;
 }
-section.start .coddy-wrapper {
+body.body section.start .coddy-wrapper {
   animation: none;
 }
-section.start .coddy-wrapper .eye-left {
+body.body section.start .coddy-wrapper .eye-left {
   animation-delay: .25s;
 }
-section.start .coddy-wrapper .eye-right {
+body.body section.start .coddy-wrapper .eye-right {
   animation-delay: .5s;
 }
 html {
@@ -266,8 +354,12 @@ body {
 body.body {
   margin: 50px 0;
 }
+main.main {
+  padding: 0 15px;
+}
 main.main section {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   position: relative;
 }
 main.main section.legal {

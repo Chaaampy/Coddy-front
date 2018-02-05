@@ -1,0 +1,117 @@
+@import '/typo.less';
+@import '/variables.less';
+@import '/classes.less';
+@import '/colors.less';
+@import '/components.less';
+
+// 1 - INTRO
+// 2 - START & PROJECT
+// 3 - ABOUT & LEGAL
+// 4 - CONTACT
+
+@media (max-width:@breakpoint-extra-small) {
+
+}
+
+@media (max-width:@breakpoint-small) {   
+    html {
+        font-size: 85%;
+    }   
+    body {
+        //
+        
+        header.header {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            background: none;
+
+            .header-wrapper {
+                //
+                
+                .logo-wrapper {
+                    position: fixed;
+                    top: 10px;
+                    left: 15px;
+                }
+
+                .nav {
+                    display: none;
+                }
+                
+                .trigger-wrapper {
+                    display: block;
+                }
+
+                .nav-mobile {
+                    .flex-center;
+                }
+            }
+        }
+        
+        section.home-intro {
+            //
+
+            article.intro-wrapper {
+                bottom: 25px;
+            }
+        }
+        
+        section.project {
+            min-height: auto;
+            margin-top: 75px;
+
+            .toad-container {
+                //
+
+                .step-progress {
+                    padding: 0 25px;
+                    
+                    span {
+                        margin: 0 10px;
+                    }
+                }
+
+                .step-instruction {
+                    //
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+        section.contact {
+            //
+
+            .toad-container {
+                //
+
+                div.contact-form-wrapper {
+                    //
+
+                    form {
+                        //
+
+                        textarea {
+                            height: 150px;
+                        }
+                    }
+                }        
+            }
+        }
+    }
+}
+
+@media (max-width:@breakpoint-medium) {
+
+}
+
+@media (max-width:@breakpoint-desktop) {
+
+}
+
+@media (min-width:@breakpoint-large) {
+
+}
