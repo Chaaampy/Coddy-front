@@ -30,6 +30,14 @@
   position: absolute;
   content: '';
 }
+.errors {
+  color: #e82c0c;
+  font-weight: 700;
+}
+.warnings {
+  color: #eb9532;
+  font-weight: 700;
+}
 body.body a {
   text-decoration: none;
 }

@@ -1,3 +1,6 @@
+@import '/colors.less';
+@import '/typo.less';
+
 .flex {
     display: flex;
 }
@@ -32,4 +35,18 @@
 .pseudo-element {
     position: absolute;
     content: '';
+}
+
+.strong {
+    font-weight: @bold;
+}
+
+.errors {
+    color: @error;
+    font-weight: @bold;
+}
+
+.warnings {
+    color: @warning;
+    font-weight: @bold;
 }

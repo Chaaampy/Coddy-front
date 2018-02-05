@@ -88,7 +88,6 @@ body.body form .form-group input:focus {
 }
 body.body form .form-group textarea {
   resize: none;
-  height: 250px;
   border: solid 1px #a6a6a6;
   padding-left: 10px;
   padding-top: 10px;

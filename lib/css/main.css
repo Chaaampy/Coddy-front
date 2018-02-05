@@ -30,6 +30,17 @@
   position: absolute;
   content: '';
 }
+.strong {
+  font-weight: 700;
+}
+.errors {
+  color: #e82c0c;
+  font-weight: 700;
+}
+.warnings {
+  color: #eb9532;
+  font-weight: 700;
+}
 body.body a {
   text-decoration: none;
 }
@@ -522,6 +533,56 @@ section.project .toad-container .step-instruction div img {
 }
 section.project .toad-container .step-instruction div p {
   font-size: 1.25rem;
+}
+section.project .toad-container .results-wrapper .results {
+  box-sizing: border-box;
+}
+section.project .toad-container .results-wrapper .results table {
+  width: 100%;
+}
+section.project .toad-container .results-wrapper .results-global table,
+section.project .toad-container .results-wrapper .results-details table {
+  padding: 10px;
+  border: solid 1px #1da1f2;
+}
+section.project .toad-container .results-wrapper .results-global table tr td,
+section.project .toad-container .results-wrapper .results-details table tr td {
+  width: 33%;
+  text-align: center;
+}
+section.project .toad-container .results-wrapper .results-global table tr td span,
+section.project .toad-container .results-wrapper .results-details table tr td span {
+  font-weight: 700;
+}
+section.project .toad-container .results-wrapper .results-full table {
+  padding: 10px;
+  border: solid 1px #1da1f2;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td {
+  text-align: center;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td span {
+  font-weight: 700;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(1) {
+  width: 40%;
+  border-right: solid 1px #4a4a4a;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(2) {
+  width: 10%;
+  border-right: solid 1px #4a4a4a;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(3) {
+  width: 10%;
+  border-right: solid 1px #4a4a4a;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(4) {
+  width: 40%;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(2),
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(3),
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(4) {
+  text-align: center;
 }
 section.about,
 section.legal,
