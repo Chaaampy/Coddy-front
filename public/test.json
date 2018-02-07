@@ -1,0 +1,648 @@
+{  
+    "id":22,
+    "code":"5A7AF2FA6321C",
+    "repo_id":"79119800",
+    "project_name":"wordpressGenerator",
+    "user_id":1,
+    "email":"dyner@hotmail.fr",
+    "public":0,
+    "content":{  
+        "metric":{  
+            "headers":{  
+
+            },
+            "original":{  
+                "Process":{  
+                    "name":"Process",
+                    "interface":false,
+                    "nbMethodsIncludingGettersSetters":8,
+                    "nbMethods":6,
+                    "nbMethodsPrivate":1,
+                    "nbMethodsPublic":5,
+                    "nbMethodsGetter":1,
+                    "nbMethodsSetters":1,
+                    "ccn":6,
+                    "ccnMethodMax":2,
+                    "externals":[  
+
+                    ],
+                    "parents":[  
+
+                    ],
+                    "lcom":2,
+                    "length":75,
+                    "vocabulary":24,
+                    "volume":343.87,
+                    "difficulty":7.5,
+                    "effort":2579.04,
+                    "level":0.13,
+                    "bugs":0.11,
+                    "time":143,
+                    "intelligentContent":45.85,
+                    "number_operators":30,
+                    "number_operands":45,
+                    "number_operators_unique":6,
+                    "number_operands_unique":18,
+                    "cloc":5,
+                    "loc":68,
+                    "lloc":63,
+                    "mi":62.57,
+                    "mIwoC":42.18,
+                    "commentWeight":20.39,
+                    "kanDefect":0.5,
+                    "relativeStructuralComplexity":4,
+                    "relativeDataComplexity":2.13,
+                    "relativeSystemComplexity":6.13,
+                    "totalStructuralComplexity":32,
+                    "totalDataComplexity":17,
+                    "totalSystemComplexity":49,
+                    "pageRank":1,
+                    "afferentCoupling":0,
+                    "efferentCoupling":0,
+                    "instability":0,
+                    "violations":{  
+
+                    },
+                    "_type":"Hal\\Metric\\ClassMetric"
+                },
+                "composer":{  
+                    "name":"composer",
+                    "packages":[  
+
+                    ],
+                    "packages-installed":[  
+
+                    ],
+                    "violations":{  
+
+                    },
+                    "_type":"Hal\\Metric\\ProjectMetric"
+                }
+            },
+            "exception":null
+        },
+        "sniffer":{  
+            "totals":{  
+                "errors":66,
+                "warnings":0
+            },
+            "files":{  
+                "index.php":{  
+                    "errors":0,
+                    "warnings":0,
+                    "messages":[  
+
+                    ]
+                },
+                "processus.php":{  
+                    "errors":28,
+                    "warnings":0,
+                    "messages":[  
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":9,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":11,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":13,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":15,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":17,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":19,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":21,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":23,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":27,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":29,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":31,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":33,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":35,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":37,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":39,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":41,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":43,
+                            "column":1
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":45,
+                            "column":1
+                        },
+                        {  
+                            "message":"Whitespace found at end of line",
+                            "source":"Squiz.WhiteSpace.SuperfluousWhitespace.EndLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":55,
+                            "column":31
+                        },
+                        {  
+                            "message":"Expected \"} else {\\n\"; found \"}else{\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":63,
+                            "column":2
+                        },
+                        {  
+                            "message":"Expected \"if (...) {\\n\"; found \"if (...){\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":82,
+                            "column":5
+                        },
+                        {  
+                            "message":"Expected \"} else {\\n\"; found \"}else{\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":84,
+                            "column":6
+                        },
+                        {  
+                            "message":"Expected \"if (...) {\\n\"; found \"if (...){\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":94,
+                            "column":5
+                        },
+                        {  
+                            "message":"Expected \"} else {\\n\"; found \"}else{\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":96,
+                            "column":6
+                        },
+                        {  
+                            "message":"Expected \"if (...) {\\n\"; found \"if (...){\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":107,
+                            "column":5
+                        },
+                        {  
+                            "message":"Expected \"} else {\\n\"; found \"}else{\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":109,
+                            "column":6
+                        },
+                        {  
+                            "message":"Expected 1 newline at end of file; 0 found",
+                            "source":"PSR2.Files.EndFileNewline.NoneFound",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":115,
+                            "column":1
+                        },
+                        {  
+                            "message":"A closing tag is not permitted at the end of a PHP file",
+                            "source":"Zend.Files.ClosingTag.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":115,
+                            "column":1
+                        }
+                    ]
+                },
+                "verif.php":{  
+                    "errors":3,
+                    "warnings":0,
+                    "messages":[  
+                        {  
+                            "message":"Whitespace found at end of line",
+                            "source":"Squiz.WhiteSpace.SuperfluousWhitespace.EndLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":5,
+                            "column":31
+                        },
+                        {  
+                            "message":"Expected \"} else {\\n\"; found \"}else{\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":10,
+                            "column":2
+                        },
+                        {  
+                            "message":"Expected 1 newline at end of file; 0 found",
+                            "source":"PSR2.Files.EndFileNewline.NoneFound",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":18,
+                            "column":35
+                        }
+                    ]
+                },
+                "class.php":{  
+                    "errors":35,
+                    "warnings":0,
+                    "messages":[  
+                        {  
+                            "message":"Each class must be in a namespace of at least one level (a top-level vendor name)",
+                            "source":"PSR1.Classes.ClassDeclaration.MissingNamespace",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":8,
+                            "column":1
+                        },
+                        {  
+                            "message":"Class name \"\" is not in camel caps format",
+                            "source":"Squiz.Classes.ValidClassName.NotCamelCaps",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":8,
+                            "column":1
+                        },
+                        {  
+                            "message":"Opening brace of a class must be on the line after the definition",
+                            "source":"PSR2.Classes.ClassDeclaration.OpenBraceNewLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":8,
+                            "column":14
+                        },
+                        {  
+                            "message":"Incorrect spacing between argument \"$cl\" and equals sign; expected 1 but found 0",
+                            "source":"Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeEquals",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":12,
+                            "column":36
+                        },
+                        {  
+                            "message":"Incorrect spacing between default value and equals sign for argument \"$cl\"; expected 1 but found 0",
+                            "source":"Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceAfterDefault",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":12,
+                            "column":36
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":12,
+                            "column":43
+                        },
+                        {  
+                            "message":"Expected \"if (...) {\\n\"; found \"if (...){\\n\"",
+                            "source":"Squiz.ControlStructures.ControlSignature",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":13,
+                            "column":9
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":17,
+                            "column":30
+                        },
+                        {  
+                            "message":"Space found before comma in function call",
+                            "source":"Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":19,
+                            "column":23
+                        },
+                        {  
+                            "message":"No space found after comma in function call",
+                            "source":"Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":19,
+                            "column":23
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":23,
+                            "column":33
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":27,
+                            "column":29
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":31,
+                            "column":29
+                        },
+                        {  
+                            "message":"No space found after comma in function call",
+                            "source":"Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":33,
+                            "column":22
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":34,
+                            "column":9
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":35,
+                            "column":9
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":38,
+                            "column":28
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":39,
+                            "column":9
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":40,
+                            "column":9
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":43,
+                            "column":27
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":46,
+                            "column":9
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":47,
+                            "column":9
+                        },
+                        {  
+                            "message":"Method name \"Process::debug_to_console\" is not in camel caps format",
+                            "source":"PSR1.Methods.CamelCapsMethodName.NotCamelCaps",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":50,
+                            "column":12
+                        },
+                        {  
+                            "message":"Expected 0 spaces between opening bracket and argument \"$data\"; 1 found",
+                            "source":"Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":50,
+                            "column":39
+                        },
+                        {  
+                            "message":"Expected 0 spaces between argument \"$data\" and closing bracket; 1 found",
+                            "source":"Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeClose",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":50,
+                            "column":45
+                        },
+                        {  
+                            "message":"Opening brace should be on a new line",
+                            "source":"Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":50,
+                            "column":47
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":51,
+                            "column":9
+                        },
+                        {  
+                            "message":"Expected 0 spaces after opening bracket; 1 found",
+                            "source":"PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":51,
+                            "column":13
+                        },
+                        {  
+                            "message":"Space after opening parenthesis of function call prohibited",
+                            "source":"PSR2.Methods.FunctionCallSignature.SpaceAfterOpenBracket",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":51,
+                            "column":14
+                        },
+                        {  
+                            "message":"Expected 0 spaces before closing bracket; 1 found",
+                            "source":"PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":51,
+                            "column":14
+                        },
+                        {  
+                            "message":"Expected 0 spaces before closing bracket; 1 found",
+                            "source":"PSR2.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":51,
+                            "column":31
+                        },
+                        {  
+                            "message":"Space after opening parenthesis of function call prohibited",
+                            "source":"PSR2.Methods.FunctionCallSignature.SpaceAfterOpenBracket",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":52,
+                            "column":65
+                        },
+                        {  
+                            "message":"Inline control structures are not allowed",
+                            "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":53,
+                            "column":9
+                        },
+                        {  
+                            "message":"Expected 1 newline at end of file; 0 found",
+                            "source":"PSR2.Files.EndFileNewline.NoneFound",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":60,
+                            "column":1
+                        },
+                        {  
+                            "message":"A closing tag is not permitted at the end of a PHP file",
+                            "source":"Zend.Files.ClosingTag.NotAllowed",
+                            "severity":5,
+                            "type":"ERROR",
+                            "line":60,
+                            "column":1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "content_url":"https:\/\/github.com\/traquall\/wordpressGenerator\/blob\/master\/",
+    "created_at":"2018-02-07 13:37:14"
+}
