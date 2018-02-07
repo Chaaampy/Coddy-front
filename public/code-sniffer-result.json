@@ -8,14 +8,7 @@
             "errors":0,
             "warnings":0,
             "messages":[  
-                {  
-                    "message":"Inline control structures are not allowed",
-                    "source":"Generic.ControlStructures.InlineControlStructure.NotAllowed",
-                    "severity":5,
-                    "type":"ERROR",
-                    "line":9,
-                    "column":1
-                }
+
             ]
         },
         "\/tmp\/1\/processus.php":{  

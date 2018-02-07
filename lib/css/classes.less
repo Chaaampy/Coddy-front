@@ -46,7 +46,31 @@
     font-weight: @bold;
 }
 
+.ERROR {
+    .errors;
+}
+
 .warnings {
     color: @warning;
     font-weight: @bold;
+}
+
+.WARNING {
+    .warnings;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    transition: @tr-medium;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    overflow: auto;
+    height: auto;
+    transition: @tr-medium;
 }

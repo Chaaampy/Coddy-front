@@ -37,7 +37,21 @@
   color: #e82c0c;
   font-weight: 700;
 }
+.ERROR {
+  color: #e82c0c;
+  font-weight: 700;
+}
 .warnings {
   color: #eb9532;
   font-weight: 700;
+}
+.WARNING {
+  color: #eb9532;
+  font-weight: 700;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
 }

@@ -566,15 +566,12 @@ section.project .toad-container .results-wrapper .results-full table thead tr td
 }
 section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(1) {
   width: 40%;
-  border-right: solid 1px #4a4a4a;
 }
 section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(2) {
   width: 10%;
-  border-right: solid 1px #4a4a4a;
 }
 section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(3) {
   width: 10%;
-  border-right: solid 1px #4a4a4a;
 }
 section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(4) {
   width: 40%;
@@ -590,15 +587,12 @@ section.project .toad-container .results-wrapper .results-full table tbody tr td
 }
 section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(1) {
   width: 40%;
-  border-right: solid 1px #4a4a4a;
 }
 section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(2) {
   width: 10%;
-  border-right: solid 1px #4a4a4a;
 }
 section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(3) {
   width: 10%;
-  border-right: solid 1px #4a4a4a;
 }
 section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(4) {
   width: 40%;

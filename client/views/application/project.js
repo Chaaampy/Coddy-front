@@ -42,26 +42,35 @@ Template.project.onRendered(function(){
             
             $('.results-global').append('<table><tr><td><span>Global results</span></td><td><span class="errors">Errors : </span>' + totalErrors + '</td><td><span class="warnings">Warnings : </span>' + totalWarnings + '</td></tr></table>');
         
-            $('.results-details').append('<table><tr><td><span>Details</span></td><td><span class="strong">Files : </span>' + nbFiles + '</td><td><a href="javascript:void(0) class="link">See more</a></td></tr></table>');
+            $('.results-details').append('<table><tr><td><span>Details</span></td><td><span class="strong">Files : </span>' + nbFiles + '</td><td><a href="javascript:void(0)" class="link show-more">Show more</a></td></tr></table>');
             
             $('.results-full').append('<table><thead><tr><td><span class="strong">File</span></td><td><span class="strong">Line</td><td><span class="strong">Type</span></td><td><span class="strong">Message</span></td></tr></thead><tbody></tbody></table>');
-            
-            for (var test in data.files) {
+        
+            for (var loop in data.files) {
                 try {
-                  if ((Object.keys(data.files[test].messages[0]).length) === '') {
+                    if ((Object.keys(data.files[loop].messages[0]).length) === '') {
                         return null;
                     } else {
-                        let errorFile = test;
-                        let errorLine = (data.files[test].messages[0].line);
-                        let errorType = (data.files[test].messages[0].type);
-                        let errorMessage = (data.files[test].messages[0].message);
-                        $('.results-full table tbody').append('<tr cellspacing="5"><td>' + test + '</td><td>' + errorLine + '</td><td>' + errorType + '</td><td>' + errorMessage + '</td></tr>')
+                        for (var i = 0; i < (data.files[loop].messages.length); i++) {
+                        let errorFile = loop;
+                        let errorLine = (data.files[loop].messages[i].line);
+                        let errorType = (data.files[loop].messages[i].type);
+                        let errorMessage = (data.files[loop].messages[i].message);
+                        $('.results-full table tbody').append('<tr><td><a target="_blank" class="link" href="' + loop + '#L' + errorLine + '">' + loop + '</a></td><td>' + errorLine + '</td><td class="' + errorType + '">' + errorType + '</td><td>' + errorMessage + '</td></tr>');
+                        }
                     }
                 }
                 catch(error) {
-                  // errors here
+                    //console.log(error);
                 }
             };
+            // console log error's rows
+            console.log($('.results-full tbody tr').length);
+            
+            // show the table
+            $('.show-more').click(function() {
+               $('.results-full').toggleClass('hidden visible'); 
+            });
       }); 
     });
 });
