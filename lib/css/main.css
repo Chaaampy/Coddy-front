@@ -37,9 +37,31 @@
   color: #e82c0c;
   font-weight: 700;
 }
+.ERROR {
+  color: #e82c0c;
+  font-weight: 700;
+}
 .warnings {
   color: #eb9532;
   font-weight: 700;
+}
+.WARNING {
+  color: #eb9532;
+  font-weight: 700;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease-in-out;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  overflow: auto;
+  height: auto;
+  transition: all 0.5s ease-in-out;
 }
 body.body a {
   text-decoration: none;
@@ -474,19 +496,22 @@ section.start article.start-wrapper .start-wrapper-btn {
   flex-wrap: wrap;
   flex-direction: column;
 }
-section.project {
+section.project,
+section.report {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.project .toad-container {
+section.project .toad-container,
+section.report .toad-container {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
 }
-section.project .toad-container .step-progress {
+section.project .toad-container .step-progress,
+section.report .toad-container .step-progress {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +521,8 @@ section.project .toad-container .step-progress {
   margin: 50px 0;
   padding: 0 100px;
 }
-section.project .toad-container .step-progress span {
+section.project .toad-container .step-progress span,
+section.report .toad-container .step-progress span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,92 +535,122 @@ section.project .toad-container .step-progress span {
   border: solid 5px #1da1f2;
   transition: all 0.25s ease-in-out;
 }
-section.project .toad-container .step-progress span.step-active {
+section.project .toad-container .step-progress span.step-active,
+section.report .toad-container .step-progress span.step-active {
   background: #1da1f2;
   color: #ffffff;
 }
-section.project .toad-container .step-progress span.step-inactive {
+section.project .toad-container .step-progress span.step-inactive,
+section.report .toad-container .step-progress span.step-inactive {
   background: #ffffff;
   color: #1da1f2;
 }
-section.project .toad-container .step-instruction {
+section.project .toad-container .step-instruction,
+section.report .toad-container .step-instruction {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-section.project .toad-container .step-instruction div {
+section.project .toad-container .step-instruction div,
+section.report .toad-container .step-instruction div {
   float: none;
 }
-section.project .toad-container .step-instruction div img {
+section.project .toad-container .step-instruction div img,
+section.report .toad-container .step-instruction div img {
   height: 75%;
   width: 75%;
 }
-section.project .toad-container .step-instruction div p {
+section.project .toad-container .step-instruction div p,
+section.report .toad-container .step-instruction div p {
   font-size: 1.25rem;
 }
-section.project .toad-container .results-wrapper .results {
+section.project .toad-container .results-wrapper .results,
+section.report .toad-container .results-wrapper .results {
   box-sizing: border-box;
 }
-section.project .toad-container .results-wrapper .results table {
+section.project .toad-container .results-wrapper .results table,
+section.report .toad-container .results-wrapper .results table {
   width: 100%;
 }
 section.project .toad-container .results-wrapper .results-global table,
-section.project .toad-container .results-wrapper .results-details table {
+section.report .toad-container .results-wrapper .results-global table,
+section.project .toad-container .results-wrapper .results-details table,
+section.report .toad-container .results-wrapper .results-details table {
   padding: 10px;
   border: solid 1px #1da1f2;
 }
 section.project .toad-container .results-wrapper .results-global table tr td,
-section.project .toad-container .results-wrapper .results-details table tr td {
+section.report .toad-container .results-wrapper .results-global table tr td,
+section.project .toad-container .results-wrapper .results-details table tr td,
+section.report .toad-container .results-wrapper .results-details table tr td {
   width: 33%;
   text-align: center;
 }
 section.project .toad-container .results-wrapper .results-global table tr td span,
-section.project .toad-container .results-wrapper .results-details table tr td span {
+section.report .toad-container .results-wrapper .results-global table tr td span,
+section.project .toad-container .results-wrapper .results-details table tr td span,
+section.report .toad-container .results-wrapper .results-details table tr td span {
   font-weight: 700;
 }
-section.project .toad-container .results-wrapper .results-full table {
+section.project .toad-container .results-wrapper .results-full table,
+section.report .toad-container .results-wrapper .results-full table {
   padding: 10px;
   border: solid 1px #1da1f2;
 }
-section.project .toad-container .results-wrapper .results-full table thead tr td {
+section.project .toad-container .results-wrapper .results-full table thead tr td,
+section.report .toad-container .results-wrapper .results-full table thead tr td {
   text-align: center;
 }
-section.project .toad-container .results-wrapper .results-full table thead tr td span {
+section.project .toad-container .results-wrapper .results-full table thead tr td span,
+section.report .toad-container .results-wrapper .results-full table thead tr td span {
   font-weight: 700;
 }
-section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(1) {
-  width: 40%;
-}
-section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(2) {
-  width: 10%;
-}
-section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(3) {
-  width: 10%;
-}
-section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(4) {
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(1),
+section.report .toad-container .results-wrapper .results-full table thead tr td:nth-child(1) {
   width: 40%;
 }
 section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(2),
+section.report .toad-container .results-wrapper .results-full table thead tr td:nth-child(2) {
+  width: 10%;
+}
 section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(3),
-section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(4) {
+section.report .toad-container .results-wrapper .results-full table thead tr td:nth-child(3) {
+  width: 10%;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(4),
+section.report .toad-container .results-wrapper .results-full table thead tr td:nth-child(4) {
+  width: 40%;
+}
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(2),
+section.report .toad-container .results-wrapper .results-full table thead tr td:nth-child(2),
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(3),
+section.report .toad-container .results-wrapper .results-full table thead tr td:nth-child(3),
+section.project .toad-container .results-wrapper .results-full table thead tr td:nth-child(4),
+section.report .toad-container .results-wrapper .results-full table thead tr td:nth-child(4) {
   text-align: center;
 }
 section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(2),
-section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(3) {
+section.report .toad-container .results-wrapper .results-full table tbody tr td:nth-child(2),
+section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(3),
+section.report .toad-container .results-wrapper .results-full table tbody tr td:nth-child(3) {
   text-align: center;
 }
-section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(1) {
+section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(1),
+section.report .toad-container .results-wrapper .results-full table tbody tr td:nth-child(1) {
   width: 40%;
 }
-section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(2) {
+section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(2),
+section.report .toad-container .results-wrapper .results-full table tbody tr td:nth-child(2) {
   width: 10%;
 }
-section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(3) {
+section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(3),
+section.report .toad-container .results-wrapper .results-full table tbody tr td:nth-child(3) {
   width: 10%;
 }
-section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(4) {
+section.project .toad-container .results-wrapper .results-full table tbody tr td:nth-child(4),
+section.report .toad-container .results-wrapper .results-full table tbody tr td:nth-child(4) {
   width: 40%;
   padding-left: 8px;
 }

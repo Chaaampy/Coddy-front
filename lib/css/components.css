@@ -30,13 +30,38 @@
   position: absolute;
   content: '';
 }
+.strong {
+  font-weight: 700;
+}
 .errors {
+  color: #e82c0c;
+  font-weight: 700;
+}
+.ERROR {
   color: #e82c0c;
   font-weight: 700;
 }
 .warnings {
   color: #eb9532;
   font-weight: 700;
+}
+.WARNING {
+  color: #eb9532;
+  font-weight: 700;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease-in-out;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+  overflow: auto;
+  height: auto;
+  transition: all 0.5s ease-in-out;
 }
 body.body a {
   text-decoration: none;
