@@ -427,7 +427,6 @@ section.demo .video-wrapper {
 section.demo .video-wrapper div {
   position: relative;
 }
-section.demo .video-wrapper div video,
 section.demo .video-wrapper div img {
   position: absolute;
   top: 0;
@@ -440,10 +439,10 @@ section.demo .video-wrapper div img {
 section.demo .video-wrapper div video {
   width: 101%;
 }
-section.demo .video-wrapper div video {
+section.demo .video-wrapper div img {
   z-index: 9;
 }
-section.demo .video-wrapper div img {
+section.demo .video-wrapper div img.mockup {
   z-index: 99;
 }
 section.demo article {
